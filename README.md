@@ -6,33 +6,33 @@ This project is a web-based application designed to manage the operations of a p
 
 # The system allows users to:
 
-# Manage ingredients, products, orders, and suppliers.
-# Modify and update database records.
-# Sort and filter tables based on custom queries.
-# Display data in an organized and interactive way.
+- Manage ingredients, products, orders, and suppliers.
+- Modify and update database records.
+- Sort and filter tables based on custom queries.
+- Display data in an organized and interactive way.
 
 # 🚀 Features 
-## Database Management:
-# Track ingredients, products, suppliers, employees, orders, and customers.
-# Manage recipes, linking products to specific ingredients and quantities.
+1. **Database Management:**
+- Track ingredients, products, suppliers, employees, orders, and customers.
+- Manage recipes, linking products to specific ingredients and quantities.
 
-## Web Interface:
-# Built with HTML, CSS, and JavaScript to ensure a responsive and interactive experience.
-# CSS is used to style the web pages and make them visually appealing.
-# JavaScript enables dynamic interactions, such as sorting tables, updating data, and fetching results in real-time.
+2. **Web Interface:**
+- Built with HTML, CSS, and JavaScript to ensure a responsive and interactive experience.
+- CSS is used to style the web pages and make them visually appealing.
+- JavaScript enables dynamic interactions, such as sorting tables, updating data, and fetching results in real-time.
 
-## Backend with Node.js:
-# Handles CRUD operations (Create, Read, Update, Delete) on database entities.
-# Manages requests from the frontend and serves data using RESTful APIs.
+3. **Backend with Node.js:**
+- Handles CRUD operations (Create, Read, Update, Delete) on database entities.
+- Manages requests from the frontend and serves data using RESTful APIs.
 
-## Database Queries:
-# Supports complex queries such as filtering products that contain liquid ingredients and are supplied by vendors offering free delivery.
+4. **Database Queries:**
+- Supports complex queries such as filtering products that contain liquid ingredients and are supplied by vendors offering free delivery.
 
 # 🛠 Technologies Used  
-# Backend: Node.js
-# Frontend: HTML, CSS, JavaScript
-# Database: Oracle SQL Developer
-# Other Tools: SQL Scripts for database management and initialization
+1. Backend: Node.js
+2. Frontend: HTML, CSS, JavaScript
+3. Database: Oracle SQL Developer
+4. Other Tools: SQL Scripts for database management and initialization
 
 # Conceptual Diagram
 ![image](https://github.com/user-attachments/assets/88312730-05ef-40cb-9c7c-ecb0a4d63e72)
