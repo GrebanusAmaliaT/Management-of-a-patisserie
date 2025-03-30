@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Listare Date</title>
+    <link rel="stylesheet" href="/styles/styles.css" type="text/css">
+</head>
+
+<body>
+    <h1> Managementul unei Cofetării</h1>
+        <h3>a) Listare conținut cu posibilitatea de sortare (toate tabelele) </h3>
+        <h3>b) Modificare informații (opțiune de edit/ștergere pentru fiecare
+            înregistrare) </h3>
+    
+        <!-- Select pentru a alege tabelul -->
+        <label for="tableSelect" >Alege tabelul:</label>
+
+        <select id="tableSelect" onchange="updateSortByOptions()">
+            <option value="SECTOR">Sector</option>
+            <option value="ANGAJAT">Angajat</option>
+            <option value="CLIENT">Client</option>
+            <option value="COMANDA">Comandă</option>
+            <option value="FURNIZOR">Furnizor</option>
+            <option value="INGREDIENT">Ingredient</option>
+            <option value="INGREDIENT_PRODUS">Ingredient_Produs</option>
+            <option value="PRODUS">Produs</option>
+            <option value="PRODUS_COMANDA">Produs_Comanda</option>
+        </select>
+        
+        <!-- Select pentru a alege coloana pentru sortare -->
+        <label for="sortBy" >Sortare după:</label>
+        <select id="sortBy" onchange="loadData()">
+            <!-- Opțiunile vor fi populate dinamically -->
+        </select>
+        
+        <div id = "load"></div>
+    
+        <!-- Tabel pentru a afișa datele -->
+        <table id="dataTable" border="1">
+            <thead>
+                <tr>
+                    <!-- Adaugă coloane pe măsură ce datele sunt afișate -->
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Datele vor fi inserate aici din script.js -->
+            </tbody>
+        </table>
+
+<h3>c) Afișarea rezultatului unei cereri care extrage informații din cel 
+    puțin 3 tabele şi le filtrează cu ajutorul a cel puțin 2 condiții </h3>
+
+<h3>Produsele care folosesc ingrediente lichide ce sunt furnizate gratuit </h3>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>ID Produs</th>
+                <th>ID Furnizor</th>
+                <th>Livrare Gratuită</th>
+                <th>ID Ingredient</th>
+            </tr>
+        </thead>
+        <tbody id="result-table">
+
+        </tbody>
+    </table>
+
+<h3>d) Afișarea rezultatului unei cereri care folosește funcții grup și o 
+    clauza having</h3>
+
+    <table border="1">
+        <thead>
+            <tr id = "cerintaD">
+            </tr>
+        </thead>
+        <tbody id="rezultateCerintaD">
+        </tbody>
+    </table>
+
+<h3>e) Implementarea unei constrângeri de tipul on delete cascade şi 
+    exemplificare din interfață</h1>
+
+    <table border="1">
+        <thead>
+            <tr id = 'CerintaEinainte'>
+            </tr>
+        </thead>
+        <tbody id="rezultateCerintaEinainte">
+            
+        </tbody>
+    </table>
+    <h4>DELETE FROM SECTOR WHERE id_sector = 1;</h4>
+    <table border="1">
+        <thead>
+            <tr id = 'CerintaEdupa'>
+            </tr>
+        </thead>
+        <tbody id="rezultateCerintaEdupa">
+            
+        </tbody>
+    </table>
+
+<h3>f) Utilizarea vizualizărilor (cel puțin 2 vizualizări: compusă care să
+    permită operații LMD, respectiv complexă) </h3>
+    <h4>View compus</h4>
+    <table border="1">
+        <thead>
+            <tr id = "headView1">
+            </tr>
+        </thead>
+        <tbody id="rezultateView1">
+            <tbody id="result-table">
+            
+        </tbody>
+    </table>
+    <h4 >Inainte de insert(Produs_Comanda unde id_produs = 10001)</h4>
+    <table border="1">
+        <thead>
+            <tr id = "headView1Dupa">
+            </tr>
+        </thead>
+        <tbody id="rezultateView1Dupa">
+            <tbody id="result-table">
+            
+        </tbody>
+    </table>
+    <h4>Dupa insert(Produs_Comanda unde id_produs = 10001)</h4>
+    <table border="1">
+        <thead >
+            <tr id="headView1Dupa2">
+            </tr>
+        </thead>
+        <tbody id="rezultateView1Dupa2">
+            <tbody id="result-table">
+            
+        </tbody>
+    </table>
+    <h4>View complex</h4>
+    <table border="1">
+        <thead >
+            <tr id="headView2">
+            </tr>
+        </thead>
+        <tbody id="rezultateView2">
+            <tbody id="result-table">
+            
+        </tbody>
+    </table>
+    <script src="script.js"></script>
+
+</body>
+</html>
