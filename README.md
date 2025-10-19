@@ -11,7 +11,7 @@ This project is a web-based application designed to manage the operations of a p
 - Sort and filter tables based on custom queries.
 - Display data in an organized and interactive way.
 
-# 🚀 Features 
+#  Features 
 1. **Database Management:**
 - Track ingredients, products, suppliers, employees, orders, and customers.
 - Manage recipes, linking products to specific ingredients and quantities.
@@ -28,7 +28,7 @@ This project is a web-based application designed to manage the operations of a p
 4. **Database Queries:**
 - Supports complex queries such as filtering products that contain liquid ingredients and are supplied by vendors offering free delivery.
 
-# 🛠 Technologies Used  
+#  Technologies Used  
 1. Backend: Node.js
 2. Frontend: HTML, CSS, JavaScript
 3. Database: Oracle SQL Developer
